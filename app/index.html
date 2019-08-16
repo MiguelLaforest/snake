@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake</title>
+  <link rel="stylesheet" href="styles/main.scss">
+  <a href="contact.html"></a>
+  <a href="about.html"></a>
+</head>
+
+<body>
+  <h1>Snake</h1>
+
+  <div id="display"></div>
+  <!-- SETTINGS -->
+  <div id="control-panel">
+    <div class="color-control">
+      <div class="snake-color">
+        <span class="controls-label">Snake:</span>
+        <div class="color snake"></div>
+      </div>
+      <div class="food-color">
+        <span class="controls-label">Food:</span>
+        <div class="color food"></div>
+      </div>
+    </div>
+
+    <div class="size-control">
+      <button id="size-">-</button>
+      <span class="controls-label">Grid Size</span>
+      <button id="size+">+</button>
+    </div>
+
+
+    <div class="speed-control">
+      <button id="speed-">-</button>
+      <span class="controls-label">Snake Speed</span>
+      <button id="speed+">+</button>
+    </div>
+
+
+    <div class="grid-control">
+      <button class="toggle-grid">Toggle Grid</button>
+    </div>
+  </div>
+
+  <div id="game-over">
+    <div class="modal-content">
+      <span>Game Over</span>
+      <span id="score"></span>
+      <button id="reset">Play Again</button>
+    </div>
+  </div>
+  <script src="./scripts/global.ts"></script>
+</body>
+
+</html>
